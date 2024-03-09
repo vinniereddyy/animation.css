@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.image1{
+   position:absolute;
+   top:170px;
+   left:200px;
+   
+   mix-blend-mode:color-burn;
+
+}
+.image2{
+    position:absolute;
+    left:600px;
+    top:170px;
+    mix-blend-mode:color-burn;
+  
+    
+    
+}
+
+
+
+@keyframes animate{
+    0%{margin-left:0px;}
+    30%{box-shadow:0px 0px 5px }
+    50%{transform:translate(270px)}
+    75%{}
+    100%{margin-right:0px}
+   
+} 
+
+
+
+
+
+.image2{
+    animation-name:animate;
+    animation-duration:5s;
+    animation-timing-function:steps(6);
+    /* animation-delay:2s; */
+    animation-iteration-count: infinite;
+    /* animation-play-state: running; */
+   animation-direction: reverse;
+    /* animation-direction:alternate-reverse; */
+}
+
+.image1{
+    animation-name:animate;
+    animation-duration:5s;
+    animation-timing-function:steps(6);
+    /* animation-delay:2s; */
+    animation-iteration-count: infinite;
+    /* animation-play-state: running; */
+    
+}
+
+
+
+#text1{
+    animation-name:animate;
+    animation-duration:5s;
+    animation-timing-function:steps(6);
+    /* animation-delay:2s; */
+    animation-iteration-count: infinite;  
+  
+}
+
+
+
+
+#text2{
+    animation-name:animate;
+    animation-duration:5s;
+    animation-timing-function:steps(6);
+    /* animation-delay:2s; */
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+   
+}
+
+#text1{
+    font-size:32px;
+    position:absolute;
+    top:100px;
+    left:230px;
+    font-weight:bolder;
+    background-color: rgb(20, 235, 1);
+    color:rgb(0, 0, 0);
+    text-shadow:0px 0px 7px white;
+}
+       
+
+
+#text2{
+    font-size:32px;
+    position:absolute;
+    top:100px;
+    left:700px;
+    background-color: yellow;
+    text-shadow:0px 0px 3px rgb(0, 0, 0);
+    /* box-shadow:0px 3px 7px red; */
+}
+    </style>
+</head>
+<body>
+   <div class="image1"><img src="./men.png" width="100%"  height="100%%"> </div>
+   <div class="image2"><img src="./women.webp" width="50%" height="50%"> </div>
+   <div id="text1">BABY I AM SORRY</div>
+   <div id="text2">HEY POBEY..</div>
+   <!-- <div class="image4"><img src="./shiv.avif" width="100%" height="100%"> </div> -->
+</body>
+</html>
